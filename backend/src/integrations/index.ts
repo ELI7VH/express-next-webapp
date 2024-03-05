@@ -1,9 +1,30 @@
 export default () => {
-  // integration functions
-  // static files - s3
-  // ai - openAI
-  // db - airtable
-  // pos - shopify
-  // email - sendgrid
-  // ?
+  // pipe dream. codegen this stuff for any project that needs it.
+
+  return {
+    auth: {
+      // auth solvers
+    },
+    s3: {
+      // bucket
+    },
+    openAI: {
+      // ai because investors
+    },
+    airtable: {
+      // airtable because Robert
+    },
+    marketing: {
+      // CMS integration
+    },
+    pos: {
+      // shopify hooks, inventory, etc
+    },
+    email: {
+      // sendgrid, w/e
+    },
+    sms: {
+      // twilio
+    },
+  }
 }
