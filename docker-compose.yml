@@ -1,0 +1,29 @@
+volumes:
+  pg_database:
+
+services:
+  database:
+    image: postgres:latest
+    env_file: .env
+    volumes:
+      - pg_database:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+  pgAdmin:
+    image: dpage/pgadmin4
+    env_file: .env
+    ports:
+      - 5050:5050
+
+  # backend:
+  #   build:
+  #     context: ./backend
+
+  # app:
+  #   build:
+  #     context: ./app
+
+  # cms:
+  #   build:
+  #     context: ./cms
